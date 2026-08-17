@@ -51,12 +51,12 @@ export default function SignIn({ showChannelAuth = true }: SignInProps) {
                 placeholder="••••••••••"
               />
               <div className="mt-2.5 flex justify-end">
-                <a
-                  href="#"
+                <Link
+                  to="/reset-password"
                   className="text-[13.5px] font-semibold text-brand hover:text-brand-700"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
             </div>
 
