@@ -107,13 +107,7 @@ export interface Brand {
 }
 
 export type ShopStatusKey = 'active' | 'expiring' | 'paused' | 'disconnected'
-export type ScopeKey =
-  | 'product'
-  | 'inventory'
-  | 'price'
-  | 'order'
-  | 'promotion'
-  | 'logistics'
+export type ScopeKey = 'product' | 'inventory' | 'price' | 'order' | 'promotion' | 'logistics'
 
 export interface Shop {
   ch: ChannelCode

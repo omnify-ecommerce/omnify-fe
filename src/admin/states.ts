@@ -135,7 +135,8 @@ export const BR_STATE: Record<BrandMapState, BrandStateView> = {
     border: 'border-err/35',
     dotState: 'partial',
     note: 'Shop chưa có giấy uỷ quyền thương hiệu. Sàn có thể hạ sản phẩm hoặc khoá ngành hàng nếu tiếp tục đăng.',
-    noteIcon: 'm21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3 M12 9v4 M12 17h.01',
+    noteIcon:
+      'm21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3 M12 9v4 M12 17h.01',
     noteColor: 'text-err-deep',
   },
   unreg: {
@@ -153,7 +154,8 @@ export const BR_STATE: Record<BrandMapState, BrandStateView> = {
     border: 'border-err/35',
     dotState: 'broken',
     note: 'Sàn đã xoá thương hiệu mục tiêu. Sản phẩm đang hiển thị sai nhãn — cần ánh xạ lại ngay.',
-    noteIcon: 'm21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3 M12 9v4 M12 17h.01',
+    noteIcon:
+      'm21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3 M12 9v4 M12 17h.01',
     noteColor: 'text-err-deep',
   },
   rejected: {

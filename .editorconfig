@@ -1,0 +1,19 @@
+# Indentation is 2 spaces everywhere; Prettier (.prettierrc.json) enforces it
+# for the files it understands, this covers the rest and the editor's Tab key.
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Trailing spaces are a hard line break in Markdown.
+[*.md]
+trim_trailing_whitespace = false
+
+# npm regenerates this one; leave it as npm writes it.
+[package-lock.json]
+indent_size = 2

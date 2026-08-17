@@ -1,11 +1,4 @@
-import {
-  Layers,
-  Inventory,
-  Tag,
-  ShoppingBag,
-  Ticket,
-  BarChart,
-} from '../components/Icons'
+import { Layers, Inventory, Tag, ShoppingBag, Ticket, BarChart } from '../components/Icons'
 import SectionHead from './SectionHead'
 
 /* The design cycles three icon tints across the six cards: brand, cyan, green. */
@@ -69,9 +62,7 @@ export default function Capabilities() {
               <Icon />
             </div>
             <div className="text-[19px] font-bold tracking-[-0.015em]">{title}</div>
-            <p className="mt-2.5 text-[15px] leading-[1.6] text-muted-2 text-pretty">
-              {body}
-            </p>
+            <p className="mt-2.5 text-[15px] leading-[1.6] text-muted-2 text-pretty">{body}</p>
           </div>
         ))}
       </div>

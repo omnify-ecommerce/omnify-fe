@@ -20,9 +20,7 @@ export function Sidebar({
         <span className="grid size-[26px] shrink-0 place-items-center rounded-lg bg-brand text-[15px] text-white">
           <AuthLogoMark />
         </span>
-        <span className="hidden text-[14.5px] font-bold tracking-[-0.01em] lg:block">
-          Omnify
-        </span>
+        <span className="hidden text-[14.5px] font-bold tracking-[-0.01em] lg:block">Omnify</span>
       </div>
 
       <nav className="flex-1 overflow-y-auto px-2 py-3">
@@ -153,11 +151,17 @@ export function PageHead({
       </div>
       <div className="ml-auto flex flex-wrap gap-2">
         <GhostButton>
-          <Icon d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3" className="text-[15px]" />
+          <Icon
+            d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3"
+            className="text-[15px]"
+          />
           Nhập Excel
         </GhostButton>
         <GhostButton>
-          <Icon d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M17 8l-5-5-5 5 M12 3v12" className="text-[15px]" />
+          <Icon
+            d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M17 8l-5-5-5 5 M12 3v12"
+            className="text-[15px]"
+          />
           Xuất
         </GhostButton>
         <BrandButton className="shadow-[0_1px_2px_rgb(20_23_30/0.14)]">
@@ -356,7 +360,10 @@ export function EmptyState({
           {primaryAction}
         </BrandButton>
         <GhostButton>
-          <Icon d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3" className="text-[15px]" />
+          <Icon
+            d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3"
+            className="text-[15px]"
+          />
           Nhập từ Excel
         </GhostButton>
       </div>
@@ -418,4 +425,3 @@ export function Pager({
     </div>
   )
 }
-

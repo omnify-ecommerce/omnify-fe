@@ -143,10 +143,7 @@ export function BrandPanel({ brand, onClose }: { brand: BrandDetail; onClose: ()
                       {sc.name}
                     </td>
                     {sc.cells.map((cell, i) => (
-                      <td
-                        key={i}
-                        className="border-b border-adm-line-4 px-2.5 py-2 text-center"
-                      >
+                      <td key={i} className="border-b border-adm-line-4 px-2.5 py-2 text-center">
                         <span
                           title={cell.title}
                           className={`inline-grid size-[19px] place-items-center rounded-[5px] text-[11px] font-bold ${cell.chip}`}
@@ -245,8 +242,8 @@ export function ShopPanel({ shop, onClose }: { shop: ShopDetail; onClose: () => 
             </span>
           </div>
           <p className="mb-2.5 max-w-[72ch] text-xs leading-[1.55] text-adm-muted">
-            Thiếu quyền bắt buộc sẽ chặn đồng bộ sang cửa hàng này, kể cả khi danh mục, thuộc tính và
-            thương hiệu đã ánh xạ đủ.
+            Thiếu quyền bắt buộc sẽ chặn đồng bộ sang cửa hàng này, kể cả khi danh mục, thuộc tính
+            và thương hiệu đã ánh xạ đủ.
           </p>
           <div className="flex flex-col gap-1.5">
             {shop.scopes.map((sp) => (
@@ -425,9 +422,7 @@ export function AttributePanel({
           <table className="w-full min-w-[780px] border-collapse">
             <thead>
               <tr>
-                <th
-                  className={`${TH} sticky top-0 z-1 w-[34%] bg-adm-panel pl-5 text-left`}
-                >
+                <th className={`${TH} sticky top-0 z-1 w-[34%] bg-adm-panel pl-5 text-left`}>
                   GIÁ TRỊ NỘI BỘ
                 </th>
                 {panel.headers.map((h) => (
@@ -442,11 +437,7 @@ export function AttributePanel({
                     </span>
                   </th>
                 ))}
-                <th
-                  className={`${TH} sticky top-0 z-1 w-16 bg-adm-panel pr-5 text-right`}
-                >
-                  ĐỦ
-                </th>
+                <th className={`${TH} sticky top-0 z-1 w-16 bg-adm-panel pr-5 text-right`}>ĐỦ</th>
               </tr>
             </thead>
             <tbody>

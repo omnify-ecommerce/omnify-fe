@@ -1,0 +1,12 @@
+# Pin LF in the working tree. Without this, git's core.autocrlf=true (set on this
+# machine) rewrites every file to CRLF on checkout, which then fails the
+# `endOfLine: "lf"` rule in .prettierrc.json — `npm run format:check` would break
+# on a fresh clone even though nobody edited anything.
+* text=auto eol=lf
+
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.woff -text
+*.woff2 -text
+*.ico -text

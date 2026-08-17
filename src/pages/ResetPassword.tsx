@@ -37,9 +37,7 @@ export default function ResetPassword({
   const [email, setEmail] = useState('maya@kiranahome.co')
   const [code, setCode] = useState<string[]>(emptyCode)
   const [error, setError] = useState(false)
-  const [toast, setToast] = useState<ToastTone | null>(
-    startStep === 'verify' ? 'success' : null,
-  )
+  const [toast, setToast] = useState<ToastTone | null>(startStep === 'verify' ? 'success' : null)
   // 0 means the cooldown has run out; the design counts down from 89.
   const [seconds, setSeconds] = useState(startStep === 'verify' ? RESEND_SECONDS : 0)
 

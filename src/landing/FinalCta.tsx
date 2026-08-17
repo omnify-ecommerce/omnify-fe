@@ -14,8 +14,8 @@ export default function FinalCta() {
             Stop managing marketplaces. Start scaling them.
           </h2>
           <p className="mx-auto mt-[18px] max-w-[52ch] text-lg leading-[1.55] text-muted text-pretty">
-            Join thousands of merchants running their entire operation from a single,
-            intelligent dashboard.
+            Join thousands of merchants running their entire operation from a single, intelligent
+            dashboard.
           </p>
           <div className="mt-[30px] flex flex-wrap justify-center gap-3.5">
             <Link

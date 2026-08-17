@@ -1,14 +1,5 @@
 import type { ChangeEvent } from 'react'
-import {
-  ChannelChips,
-  CheckBox,
-  Icon,
-  StatusPill,
-  Tag,
-  TD,
-  TH,
-  WarningNote,
-} from './AdminUI'
+import { ChannelChips, CheckBox, Icon, StatusPill, Tag, TD, TH, WarningNote } from './AdminUI'
 import { WARN_ICON } from './states'
 import type { AttrRow, BrandRow, Column, GenericRow, ShopRow } from './types'
 
@@ -211,7 +202,9 @@ export function BrandsTable({
                 </div>
                 <div className="text-[10.5px] text-adm-faint">{b.channelNote}</div>
               </td>
-              <td className={`${TD} text-[11.5px] whitespace-nowrap text-adm-faint`}>{b.updated}</td>
+              <td className={`${TD} text-[11.5px] whitespace-nowrap text-adm-faint`}>
+                {b.updated}
+              </td>
               <ChevronCell />
             </tr>
           ))}
@@ -395,7 +388,9 @@ export function AttributesTable({
                 </div>
                 <div className="text-[10.5px] text-adm-faint">{a.valueProgress}</div>
               </td>
-              <td className={`${TD} text-[11.5px] whitespace-nowrap text-adm-faint`}>{a.updated}</td>
+              <td className={`${TD} text-[11.5px] whitespace-nowrap text-adm-faint`}>
+                {a.updated}
+              </td>
               <ChevronCell />
             </tr>
           ))}

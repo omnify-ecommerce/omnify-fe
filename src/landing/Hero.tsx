@@ -25,9 +25,9 @@ export default function Hero() {
         </h1>
 
         <p className="rv mx-auto mt-[22px] max-w-[60ch] text-[clamp(17px,2.1vw,20px)] leading-[1.55] text-muted text-pretty">
-          Omnify centralizes your products, inventory, pricing, and orders — then syncs
-          them across Shopee, Lazada, TikTok Shop, and more in real time. Manage once, sell
-          everywhere, oversell never.
+          Omnify centralizes your products, inventory, pricing, and orders — then syncs them across
+          Shopee, Lazada, TikTok Shop, and more in real time. Manage once, sell everywhere, oversell
+          never.
         </p>
 
         <div className="rv mt-8 flex flex-wrap justify-center gap-3.5">

@@ -138,11 +138,16 @@ const MAP_BADGE: Record<MapState, { label: string; pill: string; border: string 
   ok: { label: 'Sẵn sàng đăng', pill: 'bg-ok/13 text-ok-deep', border: 'border-adm-line-2' },
   broken: { label: 'Lỗi ánh xạ', pill: 'bg-err/12 text-err-deep', border: 'border-err/30' },
   none: { label: 'Chưa ánh xạ', pill: 'bg-adm-chip text-adm-muted', border: 'border-adm-line-2' },
-  partial: { label: 'Thiếu điều kiện', pill: 'bg-warn/18 text-warn-deep', border: 'border-warn/35' },
+  partial: {
+    label: 'Thiếu điều kiện',
+    pill: 'bg-warn/18 text-warn-deep',
+    border: 'border-warn/35',
+  },
 }
 
 const CHECK = 'M20 6 9 17l-5-5'
-const ALERT = 'm21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3 M12 9v4 M12 17h.01'
+const ALERT =
+  'm21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3 M12 9v4 M12 17h.01'
 const PLUS = 'M12 5v14 M5 12h14'
 
 /** Everything the category detail pane needs for the selected category. */
@@ -189,7 +194,11 @@ export function buildCat(selectedCat: string): CatDetail {
             tone: 'text-err-deep',
           })
         if (mp.k === 'none')
-          checks.push({ label: 'Chưa liên kết danh mục sàn', icon: PLUS, tone: 'text-adm-muted' })
+          checks.push({
+            label: 'Chưa liên kết danh mục sàn',
+            icon: PLUS,
+            tone: 'text-adm-muted',
+          })
         if (mp.k === 'ok') {
           checks.push(
             gapCodes.length
