@@ -27,8 +27,16 @@ import { SCREENS } from '../admin/screens'
 import type { ScreenKey, ViewKey } from '../admin/types'
 
 const DEFAULT_EXPANDED: string[] = [
-  'DM-1000', 'DM-2000', 'DM-2200', 'DM-3000', 'DM-3300',
-  'DM-4000', 'DM-4100', 'DM-5000', 'DM-5100', 'DM-6000',
+  'DM-1000',
+  'DM-2000',
+  'DM-2200',
+  'DM-3000',
+  'DM-3300',
+  'DM-4000',
+  'DM-4100',
+  'DM-5000',
+  'DM-5100',
+  'DM-6000',
 ]
 
 /** Codes of every category that has children — the "expand all" target set. */
@@ -145,11 +153,7 @@ export default function AdminConsole() {
             {view === 'loading' && <LoadingState />}
 
             {view === 'empty' && (
-              <EmptyState
-                title={s.emptyTitle}
-                body={s.emptyBody}
-                primaryAction={s.primaryAction}
-              />
+              <EmptyState title={s.emptyTitle} body={s.emptyBody} primaryAction={s.primaryAction} />
             )}
 
             {view === 'data' && (
@@ -179,9 +183,7 @@ export default function AdminConsole() {
                   />
                 )}
 
-                {isBrands && (
-                  <BrandsTable rows={brandRows} {...tableProps} onOpen={setOpenBrand} />
-                )}
+                {isBrands && <BrandsTable rows={brandRows} {...tableProps} onOpen={setOpenBrand} />}
 
                 {isShops && (
                   <ShopsTable
@@ -201,11 +203,7 @@ export default function AdminConsole() {
                 )}
 
                 {!isCategories && (
-                  <Pager
-                    rowCount={rowCount}
-                    totalCount={s.totalCount}
-                    unitLabel={s.unitLabel}
-                  />
+                  <Pager rowCount={rowCount} totalCount={s.totalCount} unitLabel={s.unitLabel} />
                 )}
               </>
             )}

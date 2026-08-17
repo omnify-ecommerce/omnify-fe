@@ -48,9 +48,7 @@ export default function HowItWorks() {
               <Icon />
             </div>
             <div className="text-[17.5px] font-bold tracking-[-0.01em]">{title}</div>
-            <p className="mt-2 text-[14.5px] leading-[1.55] text-muted-2 text-pretty">
-              {body}
-            </p>
+            <p className="mt-2 text-[14.5px] leading-[1.55] text-muted-2 text-pretty">{body}</p>
           </div>
         ))}
       </div>

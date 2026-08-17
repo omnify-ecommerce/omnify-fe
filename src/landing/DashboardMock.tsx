@@ -1,11 +1,4 @@
-import {
-  LayoutDashboard,
-  Package,
-  Inventory,
-  Cart,
-  Sync,
-  Tag,
-} from '../components/Icons'
+import { LayoutDashboard, Package, Inventory, Cart, Sync, Tag } from '../components/Icons'
 import { bars } from '../data/landing'
 
 const SIDE_NAV = [
@@ -32,9 +25,7 @@ export default function DashboardMock() {
           <span className="size-[11px] rounded-full bg-[#ff5f57]" />
           <span className="size-[11px] rounded-full bg-[#febc2e]" />
           <span className="size-[11px] rounded-full bg-[#28c840]" />
-          <span className="ml-3.5 font-mono text-xs text-faint-2">
-            app.omnify.io/dashboard
-          </span>
+          <span className="ml-3.5 font-mono text-xs text-faint-2">app.omnify.io/dashboard</span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-[212px_1fr]">
@@ -75,10 +66,7 @@ export default function DashboardMock() {
 
             <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-3">
               {KPIS.map((kpi) => (
-                <div
-                  key={kpi.label}
-                  className="rounded-[13px] border border-ink/8 px-4 py-[15px]"
-                >
+                <div key={kpi.label} className="rounded-[13px] border border-ink/8 px-4 py-[15px]">
                   <div className="text-xs font-semibold text-faint">{kpi.label}</div>
                   <div className="mt-1.5 text-[23px] font-extrabold tracking-[-0.02em]">
                     {kpi.value}

@@ -22,8 +22,8 @@ export default function Footer() {
             Omnify
           </a>
           <p className="mt-4 max-w-[34ch] text-[14.5px] leading-[1.6] text-muted-3 text-pretty">
-            One intelligent platform to manage every sales channel — automated, centralized,
-            and built to scale.
+            One intelligent platform to manage every sales channel — automated, centralized, and
+            built to scale.
           </p>
           <div className="mt-[18px] flex gap-2.5">
             {SOCIALS.map(({ label, Icon }) => (

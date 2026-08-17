@@ -19,13 +19,7 @@ export default function ImageSlot({
   className = '',
 }: ImageSlotProps) {
   if (src) {
-    return (
-      <img
-        src={src}
-        alt={alt}
-        className={`size-full rounded-2xl object-cover ${className}`}
-      />
-    )
+    return <img src={src} alt={alt} className={`size-full rounded-2xl object-cover ${className}`} />
   }
 
   return (

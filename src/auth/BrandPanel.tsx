@@ -1,12 +1,4 @@
-import {
-  AuthLogoMark,
-  Sync,
-  Package,
-  Cart,
-  Tag,
-  Ticket,
-  BarChart,
-} from '../components/Icons'
+import { AuthLogoMark, Sync, Package, Cart, Tag, Ticket, BarChart } from '../components/Icons'
 import ImageSlot from '../components/ImageSlot'
 
 const FEATURES = [

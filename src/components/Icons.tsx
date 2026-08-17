@@ -60,6 +60,15 @@ export function ArrowRight(props: IconProps) {
   )
 }
 
+export function ArrowLeft(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="m12 19-7-7 7-7" />
+      <path d="M19 12H5" />
+    </Svg>
+  )
+}
+
 export function ChevronDown(props: IconProps) {
   return (
     <Svg {...props}>
@@ -295,6 +304,26 @@ export function Info(props: IconProps) {
       <circle cx="12" cy="12" r="10" />
       <path d="M12 16v-4" />
       <path d="M12 8h.01" />
+    </Svg>
+  )
+}
+
+/** Alert — Info's glyph flipped; carries the error toast. */
+export function AlertCircle(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 8v5" />
+      <path d="M12 16h.01" />
+    </Svg>
+  )
+}
+
+export function CheckCircle(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <circle cx="12" cy="12" r="10" />
+      <path d="m9 12 2 2 4-4" />
     </Svg>
   )
 }

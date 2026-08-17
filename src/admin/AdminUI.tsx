@@ -59,11 +59,7 @@ export function ChannelDots({ channels }: { channels: Chip[] }) {
   return (
     <span className="flex shrink-0 gap-1">
       {channels.map((ch) => (
-        <span
-          key={ch.code}
-          title={ch.title}
-          className={`size-[9px] rounded-full ${ch.fill}`}
-        />
+        <span key={ch.code} title={ch.title} className={`size-[9px] rounded-full ${ch.fill}`} />
       ))}
     </span>
   )
@@ -165,5 +161,4 @@ export function CheckBox({ checked, onChange, onClick, className = '' }: CheckBo
 export const TH =
   'border-b border-adm-line px-3 py-[9px] text-[11px] font-bold tracking-[0.05em] whitespace-nowrap text-adm-faint'
 export const TD = 'border-b border-adm-line-3 px-3 py-2.5 align-top'
-export const SECTION_LABEL =
-  'text-[11px] font-bold tracking-[0.05em] text-adm-faint uppercase'
+export const SECTION_LABEL = 'text-[11px] font-bold tracking-[0.05em] text-adm-faint uppercase'

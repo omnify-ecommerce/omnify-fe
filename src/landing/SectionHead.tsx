@@ -21,9 +21,7 @@ export default function SectionHead({
       <h2 className="rv mt-3.5 text-[clamp(30px,4vw,44px)] leading-[1.08] font-extrabold tracking-[-0.03em]">
         {title}
       </h2>
-      {lede && (
-        <p className="rv mt-4 text-[17px] leading-[1.55] text-muted text-pretty">{lede}</p>
-      )}
+      {lede && <p className="rv mt-4 text-[17px] leading-[1.55] text-muted text-pretty">{lede}</p>}
     </div>
   )
 }
